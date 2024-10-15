@@ -1,0 +1,26 @@
+.home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 95vw;
+    min-height: 100vh;
+    margin: auto;
+}
+.serch-btn-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 24px;
+    gap: 12px;
+}
+
+.home h1{
+    margin-top: 12px;
+    color: rgb(0, 26, 255);
+}
+.home hr{
+    width: 34vw;
+    margin-top: 6px;
+    height: 4px;
+    background-color: white;
+}

@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Open Sans", sans-serif;
+}
+body{
+  min-height: 100vh;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+.app{
+  height: auto;
+  width: 100%; 
+  background: url('./assets/images/bg_blue1.png') no-repeat center center;
+  background-size: cover; 
+  position: relative;
+}

@@ -1,0 +1,185 @@
+.emp-table-div{
+    width: 100%;
+    margin: auto;
+}
+.employee-list-table{
+    margin-top: 48px;
+    margin-bottom: 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 16px;
+}
+.employee-list-table2{
+    display: none;
+}
+thead, tbody{
+    width: 100%;
+}
+tr{
+    display: grid;
+    grid-template-columns: 0.8fr 1.5fr 0.8fr 1.1fr 0.8fr 1.4fr 1fr 1.6fr;
+    gap: 2px;
+    overflow: hidden;
+    border-radius: 8px;
+    border: 1px solid #7f86e9;
+}
+.employee-list-table {
+    border-collapse: collapse; 
+    table-layout: fixed; 
+}
+
+.employee-list-table th,
+.employee-list-table td {
+    display: flex;
+    align-items: center;
+    border: 1px solid #7f86e9; 
+    padding: 6px; 
+    text-align: center; 
+    justify-content: center;
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    white-space: nowrap; 
+    gap: 12px;
+}
+
+.employee-list-table th {
+    background-color: #f2f2f2; 
+    font-weight: bold; 
+}
+
+.employee-list-table img {
+    border-radius: 50%; 
+}
+
+.profile-img img{
+    width: 50px;
+    height: 50px;
+}
+
+@media screen and (max-width: 1300px) {
+    .profile-img img{
+        width: 35px;
+        height: 35px;
+    }
+    .employee-list-table th, .employee-list-table td {
+        padding: 2px;
+        gap: 2px;
+    }
+    thead, tbody {
+        font-size: 14px;
+    }
+
+    .td-btn {
+        padding: 4px 10px;
+        font-size: 14px;
+        font-weight: 500;
+    }
+}
+
+@media screen and (max-width: 1085px) {
+    .profile-img img{
+        width: 30px;
+        height: 30px;
+    }
+    thead, tbody {
+        font-size: 11px;
+    }
+
+    .td-btn {
+        padding: 2px 8px;
+        font-size: 11px;
+        font-weight: 500;
+    }
+}
+
+@media screen and (max-width: 845px){
+    .employee-list-table{
+        display: none;
+    }
+    .table-box{
+        margin-top: 48px;
+        margin-bottom: 48px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 75vw;
+        gap: 16px;
+        margin-left: auto;
+        margin-right: auto; 
+    }
+
+    .employee-list-table2{
+        width: 100%;
+        display:flex;
+        border-collapse: collapse; 
+        table-layout: fixed;
+        border-radius: 12px;
+        overflow: hidden;
+        border: 1px solid #7f86e9; 
+    }
+
+    .employee-list-table2 tbody{
+        display: flex;
+        flex-direction: column;
+        font-size: 16px;
+        border-radius: 12px;
+    }
+
+    .employee-list-table2 tbody tr{
+        display: grid;
+        grid-template-columns: 0.3fr 1fr;
+        gap: 2px;
+        border-radius: 0px;
+        border: none;
+        gap: 0px;
+    }
+
+    .employee-list-table2 th,
+    .employee-list-table2 td {
+        display: flex;
+        align-items: center;
+        border: 1px solid #7f86e9; 
+        padding: 6px; 
+        text-align: center; 
+        justify-content: center;
+        overflow: hidden; 
+        text-overflow: ellipsis; 
+        white-space: nowrap; 
+        background-color: #f2f2f2; 
+        gap: 12px;
+    }
+
+    .employee-list-table2 th { 
+        font-weight: bold; 
+    }
+
+    .employee-list-table2 img {
+        border-radius: 0%; 
+    }
+
+    .profile-img img {
+        width: 100px;
+        height: 100px;
+    }
+    .td-btn {
+        padding: 8px 14px;
+        font-size: 14px;
+        font-weight: 500;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .table-box{
+        width: 95vw;
+    }
+    .employee-list-table2 tbody tr {
+        grid-template-columns: 0.5fr 1fr;
+    }
+    .employee-list-table2 {
+        width: 95vw;
+    }
+}
